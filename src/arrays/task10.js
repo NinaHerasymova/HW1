@@ -1,8 +1,8 @@
-var arr = [1, 3, -9, 56, 562, 506, -45, 13, 28, 22];
+
 
 
 //---------------Quick--------------------------//
-
+"use strict"
 function defaultSortingAlgorithm (a, b) {
     if (a < b) {
       return -1;
@@ -56,7 +56,7 @@ function quickSort (
 quickSort(arr);
 
 //------------------------Merge--------------------//
-
+"use strict"
 
 var mergeSort = function (arr) {
 
@@ -90,6 +90,7 @@ mergeSort(arr)
 
 //---------------------Shell---------------------------//
 
+"use strict"
 function shellSort (arr) {
     for (var h = arr.length; h > 0; h = parseInt(h/2)) {
         for (var i = h; i < arr.length; i++) {
@@ -116,7 +117,7 @@ function heapSort(arr){
   }
 
   //--------------------------Heap-----------------------------//
-  
+"use strict"
   function createMaxHeap(arr){
     let startIndex = Math.floor(arr.length / 2);
     while(startIndex >= 0){

@@ -1,7 +1,10 @@
-var a = 0;
-var b = 5;
-var c = 0;
-var summ = 0;
+"use strict"
+
+function max (){
+    var a = 0;
+    var b = 5;
+    var c = 0;
+    var summ = 0;
 if (a > 0) {
     summ = summ + a;
 }
@@ -13,3 +16,6 @@ if (c > 0) {
 }
 
 console.log(summ)
+
+}
+max(a,b,c)

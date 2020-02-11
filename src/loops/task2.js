@@ -1,27 +1,29 @@
+"use strict"
+
 function ifPrime(num) {
     if (num > 1) {
         num = parseInt(num);
-        if ((num % 2 == 0) && (num != 2))
-            alert("Composite");
-        else if (num == 2)
-            alert("Prime");
+        if ((num % 2 === 0) && (num !== 2))
+            console.log("Composite");
+        else if (num === 2)
+            console.log("Prime");
         else {
-            k = Math.round(Math.sqrt(num));
-            flag = false;
+            var k = Math.round(Math.sqrt(num));
+            var flag = false;
 
-            for (i = 2; i < k + 1; i++)
-                if (num % i == 0) {
-                    alert("Composite");
+            for (var i = 2; i < k + 1; i++)
+                if (num % i === 0) {
+                    console.log("Composite");
                     flag = true;
                     break;
                 }
 
-            if (flag == false)
-                alert("Prime");
+            if (flag === false)
+                console.log("Prime");
         }
     } else {
-        alert('Wrong number!!!')
+        console.log('Wrong number!!!')
     }
 }
 
-ifPrime(prompt('Enter your number:'));
+ifPrime(45);

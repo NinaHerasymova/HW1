@@ -1,3 +1,5 @@
+"use strict"
+
 function wordsToNumber(string) {
     var re = /\s* \s*/;
     var string_arr = string.split(re);
@@ -90,4 +92,4 @@ function wordsToNumber(string) {
     console.log(first_digit+second_digit+third_digit+fourth_digit)
 
 }
-wordsToNumber(prompt('Enter here'))
+wordsToNumber("one hundred fourteen")
