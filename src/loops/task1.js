@@ -1,3 +1,5 @@
+"use strict"
+
 function evenSumm() {
     var sum = 0;
     var counter = 0;
@@ -6,6 +8,7 @@ function evenSumm() {
             sum += i;
             counter++;
         }
-    console.log('Summ = ' + sum + '; ' + 'quantity = ' + counter)
+    var res = 'Summ = ' + sum + '; ' + 'quantity = ' + counter;
+    console.log(res)
 }
 evenSumm();

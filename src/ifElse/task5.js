@@ -1,7 +1,9 @@
-var rate = 50;
-var mark;
+"use strict"
+let rate =3;
+let mark;
 
-switch (true){
+function student() {
+    switch (true){
     case rate>=0 && rate<19: mark='F';break;
     case rate>20 && rate<39: mark='E';break;
     case rate>40 && rate<59: mark='D';break;
@@ -10,3 +12,5 @@ switch (true){
     case rate>90 && rate<=100: mark='A';break;
 }
 console.log(mark)
+}
+student(rate)

@@ -4,7 +4,8 @@ function sqrt(num) {
         while (root * root <= num) {
             root++
         }
-        console.log('Root approx = ' + (root - 1))
+        var res = root-1;
+        console.log('Root approx = ', res)
     } else { console.log("Number is not natural!!!!") }
 }
-sqrt(prompt('Enter your number'))
+sqrt(30)

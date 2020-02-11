@@ -1,9 +1,11 @@
+"use strict"
+
 function reverse(num) {
     var result = 0;
     while (num) {
         result = result* 10 + num % 10;
         num = Math.floor(num / 10);
     }
-    alert(result);
+    console.log(result);
 }
-reverse(prompt('Enter the number'))
+reverse('659')

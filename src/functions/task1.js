@@ -1,3 +1,5 @@
+"use strict"
+
 function getDay(){
     var data=new Date();
        var today=data.getDay();
@@ -28,6 +30,6 @@ function getDay(){
        
    }
 
-   console.log('Today is '+day)
+   console.log('Today is ', day)
 }
 getDay();

@@ -1,12 +1,11 @@
+"use strict"
+var n = "562";
 function numberToWords(n) {
-    if(n>999){
-        alert('Number is too large!!!!')
-    }
-    var string = n,
-      units, tens, start, end, chunks, chunksLen, chunk, ints, i, word, words;
+
+    var string = n, units, tens, start, end, chunks, chunksLen, chunk, ints, i, word, words;
 
     var and = 'and';
-    if (string == '0') {
+    if (string === '0') {
         console.log( 'zero');
     }
 
@@ -53,7 +52,7 @@ function numberToWords(n) {
 
     }
 
-   
+
 
 }
-numberToWords(prompt('Enter your number'))
+numberToWords(n);

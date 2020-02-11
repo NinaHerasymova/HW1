@@ -1,6 +1,9 @@
+
+"use strict"
+let arr=[23, 4, 789, 34, 8,90]
 function maxIndex() {
-    var max = 0;
-    for (i = 1; i<arr.length; i++) {
+    let max = 0;
+    for (let i = 1; i<arr.length; i++) {
         if (arr[i]>arr[max]) {
             max = i;
         }
