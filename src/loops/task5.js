@@ -7,4 +7,5 @@ function digitSumm(num) {
         result += Number(num[i]);
     console.log(result);
 }
+
 digitSumm('125')

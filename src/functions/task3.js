@@ -88,8 +88,8 @@ function wordsToNumber(string) {
         case 'nine': first_digit='9';break;
         default: first_digit='';
     }
-
-    console.log(first_digit+second_digit+third_digit+fourth_digit)
+    var result = first_digit+second_digit+third_digit+fourth_digit;
+    console.log(result)
 
 }
 wordsToNumber("one hundred fourteen")
